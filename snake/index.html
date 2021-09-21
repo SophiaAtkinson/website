@@ -13,12 +13,12 @@
             @import url("https://fonts.googleapis.com/css?family=VT323");
 
              ::selection {
-                color: rgb(68, 233, 27);
+                color: rgb(170,28,255);
                 background: transparent;
             }
 
              ::-moz-selection {
-                color: rgb(68, 233, 27);
+                color: rgb(170,28,255);
                 background: transparent;
             }
 
@@ -29,7 +29,7 @@
             }
 
             body {
-                background-color: #000000;
+                background-color: #121212;
             }
 
             .wrap {
@@ -46,7 +46,7 @@
                 display: none;
                 border-style: solid;
                 border-width: 10px;
-                border-color: rgb(68, 233, 27);
+                border-color: rgb(170,28,255);
             }
 
             canvas:focus {
@@ -58,14 +58,14 @@
                 display: inline-block;
                 width: 100px;
                 font-size: 32px;
-                color: rgb(68, 233, 27);
+                color: rgb(170,28,255);
             }
 
             .score {
                 display: inline-block;
                 width: 240px;
                 font-size: 20px;
-                color: rgb(68, 233, 27);
+                color: rgb(170,28,255);
                 text-align: right;
             }
 
@@ -183,7 +183,7 @@
 
             #setting input:checked+label {
                 background-color: #FFF;
-                color: #000;
+                color: #121212;
             }
         </style>
         <script>
@@ -226,7 +226,7 @@
 
 
                 var activeDot = function (x, y) {
-                    ctx.fillStyle = "rgb(68, 233, 27)";
+                    ctx.fillStyle = "rgb(170,28,255)";
                     ctx.fillRect(x * 10, y * 10, 10, 10);
                 }
 
@@ -414,7 +414,7 @@
                         screen_snake.style.borderColor = "#606060";
                     }
                     if (wall == 1) {
-                        screen_snake.style.borderColor = "rgb(68, 233, 27)";
+                        screen_snake.style.borderColor = "rgb(170,28,255)";
                     }
                 }
 
@@ -554,9 +554,9 @@
         <div id="gameover">
             <h2>Game Over</h2>
             <p>press
-                <span style="background-color: rgb(68, 233, 27); color: #000000">space</span> to begin a</p>
-            <a id="newgame_gameover">new game</a>
-            <a id="setting_gameover">settings</a>
+                <span style="background-color: rgb(170,28,255); color: #000000">space</span> to begin a</p>
+            <a id="newgame_gameover">Play Again</a>
+            <a id="setting_gameover">Settings</a>
         </div>
 
         <!-- Setting screen -->
@@ -566,12 +566,16 @@
             <a id="newgame_setting">new game</a>
 
             <p>Speed:
-                <input id="speed1" type="radio" name="speed" value="120" checked/>
-                <label for="speed1">Slow</label>
-                <input id="speed2" type="radio" name="speed" value="75" />
-                <label for="speed2">Normal</label>
-                <input id="speed3" type="radio" name="speed" value="35" />
-                <label for="speed3">Fast</label>
+                <input id="speed1" type="radio" name="speed" value="1000" checked/>
+                <label for="speed1">|Super Fucking Slow</label>
+                <input id="speed2" type="radio" name="speed" value="120" checked/>
+                <label for="speed2">|Slow</label>
+                <input id="speed3" type="radio" name="speed" value="75" />
+                <label for="speed3">|Normal</label>
+                <input id="speed4" type="radio" name="speed" value="35" />
+                <label for="speed4">|Fast</label>
+                <input id="speed5" type="radio" name="speed" value="1" />
+                <label for="speed5">|Super Fucking Fast</label>
             </p>
 
             <p>Wall:
@@ -587,8 +591,8 @@
         <div id="menu">
             <h2>Snake</h2>
 
-            <a id="newgame_menu">new game</a>
-            <a id="setting_menu">settings</a>
+            <a id="newgame_menu">Play</a>
+            <a id="setting_menu">Settings</a>
         </div>
 
         <!--
