@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: IBMPlexMono-Text
+font link: https://fonts.google.com/specimen/IBM+Plex+Mono
+font author: Mike Abbink
+font author site: https://www.mikeabbink.com/
+
+
+icon designer: BaristaIcon
+icon designer link: /tobi527
+        
+{"bg":"#2B1357","icon":"#DAA8DB","font":"#DAA8DB","slogan":"#eebcef"}
+      
